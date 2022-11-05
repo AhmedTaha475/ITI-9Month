@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1666090442 source:d:\at\iti-pd43\c-and c++ folder\max\min\main.c
+	<stdio.h>
+	<stdlib.h>
+

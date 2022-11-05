@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1666092456 source:d:\at\iti-pd43\c-and c++ folder\twodim\main.c
+	<stdio.h>
+	<stdlib.h>
+

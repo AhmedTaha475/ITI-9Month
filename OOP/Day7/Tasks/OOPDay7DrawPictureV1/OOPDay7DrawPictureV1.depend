@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1667475176 source:d:\at\ctasks\oop\oopday7drawpicturev1\main.cpp
+	<iostream>
+	<graphics.h>
+	<conio.h>
+	<stdio.h>
+

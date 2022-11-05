@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1666178427 source:d:\at\ctasks\d4menusecond\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+

@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(41, 163, 211);
+}
+table{
+    margin: 30px auto;
+    border: solid 1px white;
+    border-collapse: separate;
+    width: 500px;
+    color:  white;
+    font-size: 20px;
+}
+tbody tr td{
+    border: solid 1px white;
+    padding: 15px;
+    width: 50%;
+   
+}
+.in-w{
+    width: 90%;
+    margin: auto;
+}

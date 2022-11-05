@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1666179206 source:d:\at\ctasks\d4concat\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

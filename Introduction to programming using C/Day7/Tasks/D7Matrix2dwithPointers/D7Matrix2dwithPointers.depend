@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1666696086 source:d:\at\ctasks\d7matrix2dwithpointers\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1666696432 source:d:\at\ctasks\c\d7matrix2dwithpointers\main.c
+	<stdio.h>
+	<stdlib.h>
+

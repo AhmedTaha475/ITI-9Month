@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1667363701 source:d:\at\ctasks\oop\oopday5drawingcode17\main.cpp
+	<iostream>
+	<graphics.h>
+	<conio.h>
+	<stdio.h>
+

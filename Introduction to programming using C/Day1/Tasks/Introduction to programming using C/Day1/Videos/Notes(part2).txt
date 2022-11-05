@@ -1,0 +1,29 @@
+1-for function declartion 
+	--return datatype FunctionName(parameters)
+		{
+
+			~~~~~~~~~~~~~~~~;
+
+		}
+2-Calling FunctionName (Data);
+
+3-operating system is the one who calls the main and take in the value if it returns anyvalue
+
+4-(#) is the preprocessor :your telling the compiler to look for anymissing functions in the main function from the library that you included like stdio.h
+
+5-like #include <stdio.h>.... if you have a custom library you can put it in the library folder and include or give it the full path like that #include "C:\\myfolder\\mycustomlib.h"
+
+6-if you write 7 in the code blocks its understandable by the editor that its a data not a variable name duo to naming rules 
+
+	Nameing Rules (can't start with numbers-nor underscore only)
+7-in c language when you create new variable as example you can see it has random/useless data and that's due to the fact 
+that when you delete data or variable it doesn't actually delete it just releases the variable or that address for the next time you will call it or use it again
+and it still has the last value that is left in it so u will see that random data when you use that same address again (only in c and c++ iguess)
+
+8-charctristics of x(variable)
+	type:int
+	size:4byte
+	Name:x
+	address:0xff00 0x for hexadecimal		
+	content:..
+9- N bits = 2^n data content for example byte = 8 bits =2^8 data content for example 3 bits 2^3 = 8data content = 0-7

@@ -1,0 +1,12 @@
+1-(platform ) is resposible for executing all the instructions or your code platform=opertating system+ hardware--processor
+2-operating system responsible for guiding the tasks on the processor
+3-hardware only understand machine language and to convert from c to this language we use a compiler (GCC) to do this conversion
+
+4-type of errors 
+	a0-warning - its doesnt block your code from running and you can neglect it (but for the best case try 2 solve these errors to avoid some mistake in the future)	
+	a-syntax error (compilation error) when you forget or mistake in the name of something
+	b-RunTime Error (operating system discover that error during the runtime and you can solve that error using the debugger)
+	c-logical error
+
+5-our entry point function called (Main)
+	

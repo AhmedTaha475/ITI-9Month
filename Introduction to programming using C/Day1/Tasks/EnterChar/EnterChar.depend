@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1665663344 source:d:\at\iti-pd43\c-and c++ folder\enterchar\main.c
+	<stdio.h>
+	<conio.h>
+

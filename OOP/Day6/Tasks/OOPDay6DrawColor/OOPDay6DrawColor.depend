@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1667394170 source:c:\users\ahmed\onedrive\desktop\oopday6drawcolor\main.cpp
+	<iostream>
+	<graphics.h>
+	<conio.h>
+	<stdio.h>
+

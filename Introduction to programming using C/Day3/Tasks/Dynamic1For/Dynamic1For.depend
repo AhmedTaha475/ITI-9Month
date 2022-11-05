@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1666106092 source:d:\at\iti-pd43\c-and c++ folder\dynamic1for\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1666219853 source:d:\at\ctasks\dynamic1for\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1666178986 source:d:\at\ctasks\d4nametyping\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1666680629 source:d:\at\ctasks\d7multilineeditor\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<string.h>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1666177289 source:d:\at\ctasks\d4getasc\main.c
+	<stdio.h>
+	<stdlib.h>
+

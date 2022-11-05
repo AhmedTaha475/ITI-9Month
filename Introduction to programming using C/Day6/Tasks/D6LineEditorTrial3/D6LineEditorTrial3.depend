@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1666600481 source:d:\at\ctasks\d6lineeditortrial3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<string.h>
+

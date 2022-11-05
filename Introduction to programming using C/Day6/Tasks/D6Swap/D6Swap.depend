@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1666525008 source:d:\at\ctasks\d6swap\main.c
+	<stdio.h>
+	<stdlib.h>
+
