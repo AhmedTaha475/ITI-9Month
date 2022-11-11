@@ -1,0 +1,32 @@
+use Company_SD
+--(1)select all employee data 
+select * from Employee
+
+--(2)disp some of emp data
+select Fname,Lname,Salary,Dno from Employee
+
+--3
+select p.Pname,p.Plocation,p.Dnum  from Project p
+
+--4
+select FullName=Fname+' '+Lname,(0.1*Salary) [ANNUAL COMM] from Employee
+
+--5
+select e.SSN, FullName=e.Fname+' '+e.Lname from Employee e 
+where Salary>1000
+
+--6
+select e.SSN, FullName=e.Fname+' '+e.Lname from Employee e 
+where Salary*12>10000
+
+--7
+select Fname,Salary from Employee
+where Sex='F'
+
+--8
+select Dname,Dnum from Departments
+where MGRSSN=968574
+
+--9
+select  Pnumber,Pname,Plocation from Project
+where Dnum=10
