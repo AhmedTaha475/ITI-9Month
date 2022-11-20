@@ -19,8 +19,12 @@ void main()
 
   int i,R,C,n;
 
-
-
+do
+{
+printf("Enter the size \n");
+scanf("%i",&n);
+}while(n==1||n%2==0);
+/*
 for(i=0;;i++)
 {
 printf("Enter the size \n");
@@ -30,6 +34,7 @@ if((n==1)||(n%2==0))
 else
     break;
 }
+*/
 R=1;C=(n/2)+1;
 for(i=1;i<=(n*n);i++)
     {

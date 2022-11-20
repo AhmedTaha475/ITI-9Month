@@ -1,4 +1,0 @@
-http://sourceforge.net/projects/codeblocks/files/Binaries/20.03/Windows/codeblocks-20.03mingw-setup.exe
-
-Download :
-codeblocks-20.03mingw-setup.exe
