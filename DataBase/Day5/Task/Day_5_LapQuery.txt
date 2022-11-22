@@ -1,0 +1,194 @@
+use ITI
+-------
+--ITI Database
+--Q1
+select count(St_Age) NoOFStudent from Student
+
+
+--Q2
+select distinct Ins_Name from Instructor
+
+--Q3
+select s.St_Id [Student ID] , CONCAT(ISNULL(s.St_Fname,''),' ',ISNULL(s.St_Lname,'')) [Student Full Name] , ISNULL(d.Dept_Name,'NA') [Department Name]  
+from Student s left outer join Department D
+on s.Dept_Id=d.Dept_Id
+
+--Q4
+select I.Ins_Name,D.Dept_Name
+from Instructor I left outer join Department D
+on I.Dept_Id=D.Dept_Id
+
+select * from Instructor
+
+
+--Q5
+select CONCAT(ISNULL(s.St_Fname,''),' ',ISNULL(s.St_Lname,'')) [Student Full Name], c.Crs_Name [Course Name] , sc.Grade
+from Student S inner join Stud_Course SC
+on S.St_Id=Sc.St_Id inner join Course C
+on C.Crs_Id=SC.Crs_Id
+where sc.Grade is not null
+order by [Student Full Name]
+
+
+
+select * from course
+select * from Stud_Course
+--Q6
+
+select T.Top_Name , COUNT(c.Crs_Id) [No of courses]
+from Course C inner join Topic T
+on C.Top_Id=T.Top_Id
+group by T.Top_Name
+
+
+select * from Topic
+select * from Course
+
+
+--Q7
+
+select min(Salary) MinSalary, MAX(Salary) MaxSalary
+from Instructor
+
+select * from Instructor
+
+--Q8
+select * from Instructor
+where Salary <(select AVG(salary) from Instructor)
+
+
+--Q9
+select top(1) d.Dept_Name
+from Instructor i inner join Department d 
+on i.Dept_Id = d.Dept_Id
+order by i.Salary
+
+
+--Q10
+select * 
+from (select *,ROW_NUMBER() over (order by salary desc) RN
+		from Instructor) as X
+where RN in (1,2)
+
+
+--Q11
+select Ins_Name,COALESCE(convert(varchar(30),Salary) ,'Instructor Bonus') Salary
+from Instructor
+
+--Q12
+select avg(salary) avgSalary from Instructor
+
+--Q13
+select s.St_Fname,Super.*
+from Student S inner join Student Super
+on S.St_super = Super.St_Id
+
+select * from Student
+
+--Q14
+
+select d.Dept_Name,x.Salary
+from (select Ins_Id,Dept_Id,Salary,ROW_NUMBER() over (partition by Dept_id order by salary desc ) RN
+			from Instructor where Salary is not null) as x inner join Department d
+			on x.Dept_Id=d.Dept_Id
+		where RN in (1,2)
+
+
+--Q15
+select x.St_Fname,d.Dept_Name
+from (select Dept_Id,St_Fname,ROW_NUMBER() over (partition by Dept_id order by newid() asc) Random
+		from Student where Dept_Id is not null) as x inner join Department d on x.Dept_Id=d.Dept_Id
+where Random=1
+
+---------------------------------------------------------------------------------------------------------
+--Adventure works2012 Database
+
+use AdventureWorks2012
+
+--Q1
+select s.SalesOrderID,s.ShipDate from Sales.SalesOrderHeader S
+where s.OrderDate between '7/28/2002' and '7/29/2014'
+
+
+--Q2
+select p.ProductID,p.Name from Production.Product P
+where p.StandardCost<110
+
+--Q3
+select p.ProductID,p.Name from Production.Product P
+where p.Weight is null
+
+--Q4
+select p.ProductID,p.Name,p.Color from Production.Product P
+where p.Color in('black','red','silver')
+
+--Q5
+select p.ProductID,p.Name from Production.Product P
+where p.Name like 'b%'
+
+--Q6
+UPDATE Production.ProductDescription
+SET Description = 'Chromoly steel_High of defects'
+WHERE ProductDescriptionID = 3
+
+select * from Production.ProductDescription PD
+where PD.Description like '%[_]%'
+
+--Q7
+select s.OrderDate,Sum(s.TotalDue) Total  from Sales.SalesOrderHeader S
+where S.OrderDate between '7/1/2001' and '7/31/2014'
+group by s.OrderDate
+
+--Q8
+select Distinct E.HireDate from HumanResources.Employee E
+
+--Q9
+--select avg(p.ListPrice) from Production.Product P
+
+select AVG(x.ListPrice) from (select distinct p.ListPrice from Production.Product p) as x
+
+--Q10
+select CONCAT('The ',p.Name,' ','is Only! ',CONVERT(nvarchar(20),p.ListPrice))  List from Production.Product P
+where p.ListPrice between 100 and 120
+order by p.ListPrice
+
+--Q11
+--a
+select s.rowguid,s.Name,s.SalesPersonID,s.Demographics   into sales.[store_Archive]
+from Sales.Store s
+
+select * from sales.Store
+select * from sales.store_Archive
+--701 row copied into the new table
+
+--b
+select s.rowguid,s.Name,s.SalesPersonID,s.Demographics   into sales.[store_Archive1]
+from Sales.Store s
+where 1=2
+
+select * from sales.store_Archive1
+-- no data was copied into store_Archive1
+
+
+
+
+
+--Q12
+select convert(nvarchar(40),GETDATE()) DateStyle
+union 
+select CONCAT(year(getdate()),'-',MONTH(getdate()),'-',Day(getdate()))
+union
+select FORMAT(GETDATE(),'d','en-us')
+union
+select FORMAT(GETDATE(),'d','no')
+union
+select CONCAT(Day(getdate()),'//',MONTH(getdate()),'//',year(getdate()))
+
+
+
+select FORMAT(GETDATE(),'yyyy,MM,dd')
+select FORMAT(GETDATE(),'yyyy/MM/dd')
+select FORMAT(GETDATE(),'yyyy,MM,dd, hh:mm:ss')
+select FORMAT(GETDATE(),'dd,MM,yyyy')
+
+

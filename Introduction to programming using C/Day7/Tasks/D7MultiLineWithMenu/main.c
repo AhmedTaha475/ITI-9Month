@@ -59,10 +59,10 @@ char** MultiLineEditor(int c,int* size,int* xPos,int* yPos,int* sChar,int* eChar
     do
     {
         gotoxy(xPos[CurrentLine]+CCounter[CurrentLine],yPos[CurrentLine]);///goto the place where you were at each input
-        temp=getch();
+        temp=_getch();
         if(temp==-32)
         {
-            temp=getch();///Get the real key from the buffer
+            temp=_getch();///Get the real key from the buffer
             switch(temp)/// up and down for movement around the form,else is for movement inside each line
             {
             case 71:///Home Key
@@ -144,7 +144,7 @@ char** MultiLineEditor(int c,int* size,int* xPos,int* yPos,int* sChar,int* eChar
                 }
                 else
                 {
-                    temp=getch();
+                    temp=_getch();
                 }
                 break;
 
@@ -288,7 +288,7 @@ int main()
                     if(E[i].ID!=-1)
                         printf("\nID:%i Name:%s Age:%i Gender:%c Address:%s  NetSalary:%lf\n",E[i].ID,E[i].Name,E[i].Age,E[i].Gender,E[i].Address,NetSalary(E[i].Salary,E[i].Deduct,E[i].overTime));
                 }
-                getch();
+                _getch();
                 break;
             case 3:                    //Delete By ID
                 system("cls");
@@ -309,7 +309,7 @@ int main()
                 {
                     printf("No data with That ID Found");
                 }
-                getch();
+                _getch();
                 break;
             case 4: // Delete By Name
                 system("cls");
@@ -332,7 +332,7 @@ int main()
                 {
                     printf("No data with That Name Found");
                 }
-                getch();
+                _getch();
                 break;
             case 5:
                 EFlag=1;
