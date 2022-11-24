@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1669114188 source:d:\at\ctasks\ds\ds_d1_dll_queue\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+

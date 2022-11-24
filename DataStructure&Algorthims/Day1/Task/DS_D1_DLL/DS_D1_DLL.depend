@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1669035871 source:d:\at\ctasks\ds\ds_d1_dll\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<string.h>
+

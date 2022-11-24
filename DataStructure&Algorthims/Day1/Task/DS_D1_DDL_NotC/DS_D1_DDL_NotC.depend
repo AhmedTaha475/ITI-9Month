@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1669116276 source:d:\at\ctasks\ds\ds_d1_ddl_notc\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<string.h>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1669164232 source:d:\at\ctasks\ds\ds_d1_doublelinkedlistwithinsert\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+
