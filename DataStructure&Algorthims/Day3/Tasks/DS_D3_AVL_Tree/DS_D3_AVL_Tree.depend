@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1669332673 source:d:\at\ctasks\ds\ds_d3_avl_tree\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+

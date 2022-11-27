@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1669332849 source:d:\at\ctasks\ds\ds_d3_dll_with_insert\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+
