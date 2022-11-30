@@ -35,7 +35,7 @@ function palindrome()
 {
 var userString,caseSen,revArray="";
 userString=prompt("Please enter your string");
-caseSen=confirm("Do you want it be Case sensitive or not ?")
+caseSen=confirm("Do you want it be Case sensitive or not ?");
 if(caseSen)
 {
     for(var i=userString.length-1;i>=(userString.length)/2;i--)
@@ -70,6 +70,40 @@ if(caseSen)
 
 //palindrome();
 
+function palindrome2()
+{
+var userString,caseSen;
+userString=prompt("Please enter your string");
+caseSen=confirm("Do you want it be Case sensitive or not ?");
+var reg= new RegExp(userString,'gi');
+
+if(caseSen)
+{
+    if(userString==userString.split("").reverse().join(""))
+    {
+        alert("its palindrome");
+    }
+    else
+    {
+        alert("its not palindrome");
+    }
+}
+else
+{
+    if(reg.test(userString.split("").reverse().join("")))
+    {
+        alert("its palindrome");
+    }
+    else
+    {
+        alert("its not palindrome"); 
+    }
+}
+
+}
+
+//palindrome2();
+
 
 function checkLength()
 {
@@ -93,7 +127,17 @@ alert(tempArry[index]);
 }
 //CheckLength();
 
+function checkLength2()
+{
+var tempArry=[];
+var userString=prompt("Enter String");
+userString=userString.trim();
+tempArry=userString.split(" ").sort((a,b)=>b.length-a.length);
+alert(tempArry[0]);
 
+}
+
+//checkLength2();
 
 function getInfo()
 {
@@ -138,3 +182,90 @@ document.write("<br><span style='color:" +Mycolor+ "'> your email address is </s
 }
 
 //getInfo();
+
+
+//Array object
+function mathOperation()
+{
+var arr=[];
+
+for(var i =0;i<3;i++)
+{
+    do
+    {
+        arr[i]=parseInt(prompt("Please enter the number "));
+
+    }while(!isFinite(arr[i]))
+}
+document.write('<span style="color:red;"> sum of the 3 values</span>'+arr[0]+'+'+arr[1]+'+'+arr[2]+'='+(arr[0]+arr[1]+arr[2]));
+document.write('<br><span style="color:red;"> Mulplication of the 3 values</span>'+arr[0]+'*'+arr[1]+'*'+arr[2]+'='+(arr[0]*arr[1]*arr[2]));
+document.write('<br><span style="color:red;"> Division of the 3 values</span>'+arr[0]+'/'+arr[1]+'/'+arr[2]+'='+(arr[0]/arr[1]/arr[2]));
+
+}
+
+//mathOperation();
+
+
+
+function sortingArray()
+{
+    var arr=[];
+
+    for(var i =0;i<5;i++)
+    {
+        do
+        {
+            arr[i]=parseInt(prompt("Please enter the number "));
+    
+        }while(!isFinite(arr[i]))
+    }
+
+    document.write('<span style="color:red;"> you have entered the values of </span>'+ arr.join(","));
+    document.write('<br><span style="color:red;"> your values after being sorted descending </span>'+ arr.sort((a,b)=>b-a).join(","));
+    document.write('<br><span style="color:red;"> your values after being sorted ascending </span>'+ arr.sort((a,b)=>a-b).join(","));
+        
+
+
+
+}
+
+//sortingArray();
+
+
+
+function mathObject()
+{
+
+    var number;
+    do
+    {
+        number=parseInt(prompt("what is the value of the circuit radius","type Radius here"));
+
+    }while(!isFinite(number));
+
+    var area=Math.PI*number*number;
+    alert("Total area of the circle is " + area);
+
+
+    do
+    {
+        number=parseInt(prompt("what is the value you want to calculate its square root","type your value here"));
+
+    }while(!isFinite(number));
+
+    var squareRoot=Math.sqrt(number);
+    alert("square root of "+number+' is '+squareRoot);
+
+
+    do
+    {
+        number=parseInt(prompt("what is the ange you want to calculate its cos value","type your value here"));
+
+    }while(!isFinite(number));
+    var rad=(Math.PI*number)/180;
+    var result = Math.round(Math.cos(rad)).toFixed(4);
+    document.write("Cos "+number+" is " + result);
+   // alert("Cos "+number+" is " + result);
+}
+
+//mathObject();
