@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg Form</title>
+
+    <style>
+        .alert {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <form id="regForm">
+
+        <div>
+            <label>
+                Name:
+                <input type="text" id="regName" name="uName" required>
+                <p class="alert" id="alertName" hidden> Please enter alphabetical characters only</p>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>
+                Email:
+                <input type="text" id="regEmail" name="Email" required>
+                <p class="alert" id="alertMail" hidden> Please enter the mail in the form of (anyname@yahoo/gmail.com)
+                </p>
+
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>
+                Password:
+                <input type="password" id="regPassword" name="Password" required>
+                <p class="alert" id="alertPassword" hidden> Please make sure the password Starts with capital letter
+                    and
+                    numbers and length more than 8 char </p>
+
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>
+                Job Title:
+                <input type="text" id="regTitle" name="Title" required>
+                <p class="alert" id="alertTitle" hidden> Please enter your job Title in alphabetical characters only</p>
+
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>
+                Mobile:
+                <input type="number" id="regMobile" name="Mobile" required>
+                <p class="alert" id="alertMobile" hidden> Please enter valid mobile phone</p>
+
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>
+                Gender:
+                <input type="text" id="regGender" name="Gender" required>
+                <p class="alert" id="alertGender" hidden> Please type Male or Female</p>
+
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>
+                Address:
+                <input type="text" id="regAddress" name="Address" required>
+                <p class="alert" id="alertAddress" hidden> Please enter Valid address</p>
+
+            </label>
+        </div>
+        <br>
+        <div>
+            <input type="submit" id="subForm">
+            <input type="reset">
+        </div>
+
+
+    </form>
+
+
+    <script src="Task1.js"></script>
+</body>
+
+</html>
