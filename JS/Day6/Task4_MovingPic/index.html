@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .movingBoarders {
+            width: 700px;
+            height: 700px;
+            border: 1px solid red;
+            position: relative;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        #left {
+            position: absolute;
+            top: 280px;
+            left: 0;
+        }
+
+        #right {
+            position: absolute;
+            top: 280px;
+            right: 0;
+        }
+
+        #top {
+            position: absolute;
+            bottom: 0;
+            left: 330px;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+
+        p {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="movingBoarders">
+        <img src="img/icon1.gif" alt="" id="left">
+        <img src="img/icon2.gif" alt="" id="right">
+        <img src="img/TOP.JPG" alt="" id="top">
+    </div>
+    <div class="buttons">
+        <input type="button" value="Go" id="toggleBtn">
+        <input type="button" value="reset" id="resetBtn">
+    </div>
+    <div class="typingDetails">
+
+        <p id="icon1"></p>
+        <p id="icon2"></p>
+    </div>
+
+
+
+
+    <script src="task4.js"></script>
+</body>
+
+</html>
