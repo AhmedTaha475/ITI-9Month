@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+		
+		
+	
+	<xs:element name="purchaseOrder" >
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="shipTo"></xs:element>
+				<xs:element ref="billTo"></xs:element>
+				<xs:element name="comment" type="xs:string"></xs:element>
+				<xs:element ref="items"></xs:element>
+			</xs:sequence>
+			<xs:attribute name="orderDate" type="xs:string" use="required"></xs:attribute>
+		</xs:complexType>
+		
+	</xs:element>
+	
+	
+	
+	
+	<xs:element name="shipTo" type="Info">
+	</xs:element>
+	<xs:element name="billTo" type="Info"></xs:element>
+	
+	<xs:complexType name="Info">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string"></xs:element>
+			<xs:element name="street" type="xs:string"></xs:element>
+			<xs:element name="city" type="xs:string"></xs:element>
+			<xs:element name="state" type="xs:string"></xs:element>
+			<xs:element name="zip" type="xs:integer"></xs:element>
+		</xs:sequence>
+		<xs:attribute name="country" type="xs:string" use="required"></xs:attribute>
+	</xs:complexType>
+	
+	<xs:element name="items">
+		<xs:complexType>
+				<xs:sequence>
+					<xs:element ref="item" minOccurs="1" maxOccurs="unbounded" >
+					</xs:element>
+				</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	
+	<xs:element name="item">
+		<xs:complexType>
+			<xs:sequence>
+					<xs:element name="productName" type="xs:string"></xs:element>
+					<xs:element name="quantity" type="xs:integer"></xs:element>
+					<xs:element name="USPrice" type="xs:decimal"></xs:element>
+					<xs:element name="comment" type="xs:string" minOccurs="0" maxOccurs="1"></xs:element>
+					<xs:element name="shipDate" type="xs:string" minOccurs="0" maxOccurs="1"></xs:element>
+			</xs:sequence>
+			<xs:attribute name="partNum" use="required">
+				<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="\d{3}-\w{2}"></xs:pattern>
+							</xs:restriction>
+				
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</xs:schema>
