@@ -1,0 +1,63 @@
+#header {
+  text-align: center;
+}
+
+.btn {
+  padding: 15px 25px;
+  background-color: rgb(247, 55, 135);
+  border: 1px solid rgb(247, 55, 135);
+  border-radius: 10px;
+  font-size: 25px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-shadow: 2px 2px 2px 1px grey;
+}
+/* #aboutPg {
+  width: 500px;
+  height: 300px;
+  margin: 50px auto;
+  box-shadow: 0px 0px 9px 1px grey;
+  text-align: center;
+} */
+
+/* #galleryPg {
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+}
+#left {
+  position: absolute;
+  top: 48%;
+  left: 32%;
+}
+#right {
+  position: absolute;
+  top: 48%;
+  right: 32%;
+} */
+
+/* #servicesPg {
+  position: relative;
+}
+#list {
+  position: absolute;
+  left: 48%;
+  list-style-type: none;
+  margin-top: 5px;
+}
+#list li {
+  background-color: rgb(247, 55, 135);
+  padding: 15px 30px;
+  border: 1px solid rgb(252, 88, 156);
+  border-radius: 10px;
+  color: white;
+} */
+
+/* #complainPg {
+  width: 500px;
+  height: 300px;
+  margin: 50px auto;
+  box-shadow: 0px 0px 9px 1px grey;
+  text-align: center;
+  padding: 50px;
+} */
