@@ -1,0 +1,48 @@
+.doublezoom-container {
+    margin-bottom: 10px;
+    width: 640px;
+}
+.doublezoom-image {
+    position: relative;
+    width: 100%;
+    height: 359px;
+    margin: 1px;
+}
+
+.doublezoom-landing {
+    margin-top: 10px;
+    width: 103%;
+    overflow: hidden;
+}
+
+.doublezoom-landing-left {
+    width: 270px;
+    height: 270px;
+    float: left;
+    border: 3px solid black;
+}
+
+.doublezoom-landing-right {
+    margin-left: 270px;
+    width: 270px;
+    height: 270px;
+    border: 3px solid black;
+}
+
+.box {
+    position: absolute;
+    width: auto;
+    height: auto;
+}
+
+.box img {
+    border: 3px solid black;
+}
+
+.overlay {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 9;
+    border: 1px solid orange;
+}
