@@ -1,0 +1,20 @@
+
+Assignments:
+=============
+
+1) Book Case Studies: (Start at Page 17 at Book)
+
+*** 3 Case studies from book, for each one you have to determine:
+- Product Type (Generic/ Customized)
+- Application type (web/ entertainment/ embedded/ .... )
+- Development Process Model (Water fall/ Prototype/....) 
+
+2) For Each Model from the following: (Category , How it works? , Pros & Cons )
+	- Spiral-Model 
+	- V-Model
+
+3) CRM & ERP
+
+
+------------------------------------------------------------------
+
