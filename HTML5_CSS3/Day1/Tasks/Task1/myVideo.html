@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Untitled Document</title>
+</head>
+
+<body>
+
+    <video id="vid" src="video/frozen.mp4" controls width="550" height="350" poster="frozen.jpg"></video>
+    <br>
+    <div>
+        <input type="range" id="vidDuration" min="0" value="0" style="width: 500px;">
+        <span><span id="currentDuration">0:00</span>/<span id="totalDuration">0:00</span></span>
+    </div>
+    <br>
+    <div>
+        <input type="button" id="play" value="play">
+        <input type="button" id="pause" value="pause">
+        <input type="button" id="backToStart" value="&lt;&lt;">
+        <input type="button" id="moveBackStep" value="&lt;">
+        <input type="button" id="moveForwardStep" value="&gt;">
+        <input type="button" id="goToEnd" value="&gt;&gt;">
+        <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1" style="width: 200px;">
+        <input type="button" id="mute" value="mute">
+        <input type="button" id="fullScreen" value="EnterFullScreen">
+        <br>
+        <br>
+        <span>Speed</span> <input type="range" id="Speed" min="1" max="16" value="1" step="1">
+
+    </div>
+    <script src="task1.js"></script>
+</body>
+
+</html>
