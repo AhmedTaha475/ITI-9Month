@@ -1,0 +1,13 @@
+input {
+  display: block;
+  margin: 25px 0;
+}
+#username:invalid,
+#email:invalid {
+  outline: solid 2px red;
+}
+
+#username:valid + #usernameValid,
+#email:valid + #emailValid {
+  display: none;
+}

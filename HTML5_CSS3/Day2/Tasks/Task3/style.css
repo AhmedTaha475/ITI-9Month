@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "myFont";
+  src: url("algerian_font/Algerian Regular.ttf");
+}
+
+#card {
+  width: 400px;
+  height: 600px;
+  border: solid 4px red;
+  border-radius: 30px;
+  position: relative;
+}
+#card::before {
+  content: "A";
+  font-family: "myFont";
+  font-size: 90px;
+  left: 3px;
+  top: 0;
+  position: absolute;
+}
+#card::after {
+  content: "A";
+  font-family: "myFont";
+  font-size: 90px;
+  position: absolute;
+  bottom: 0;
+  right: 3px;
+}
+
+#tri {
+  width: 0px;
+  height: 0px;
+  border-bottom: 50px solid black;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  top: 56%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+}
+
+#invertedHeart {
+  position: relative;
+  width: 110px;
+  height: 90px;
+  top: 50%;
+  left: 50%;
+  transform: rotate(180deg) translate(50%, 50%);
+}
+
+#invertedHeart::before,
+#invertedHeart::after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: black;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+#invertedHeart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
