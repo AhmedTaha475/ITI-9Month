@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        svg {
+            border: solid 3px black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <svg width="600" height="600">
+        <line x1="0" y1="0" x2="0" y2="0" stroke="red" stroke-width="6">
+            <animate id="end" attributeName="x2" from="0" to="600" dur="3s" repeatCount="1" fill="freeze" />
+            <animate attributeName="y2" from="0" to="600" dur="3s" repeatCount="1" fill="freeze" />
+        </line>
+    </svg>
+
+
+    <script src="moveLine.js"></script>
+</body>
+
+</html>
