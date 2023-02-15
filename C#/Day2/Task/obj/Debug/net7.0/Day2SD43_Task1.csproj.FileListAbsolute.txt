@@ -1,0 +1,15 @@
+C:\Users\ahmed\source\repos\Day2SD43_Task1\bin\Debug\net7.0\Day2SD43_Task1.exe
+C:\Users\ahmed\source\repos\Day2SD43_Task1\bin\Debug\net7.0\Day2SD43_Task1.deps.json
+C:\Users\ahmed\source\repos\Day2SD43_Task1\bin\Debug\net7.0\Day2SD43_Task1.runtimeconfig.json
+C:\Users\ahmed\source\repos\Day2SD43_Task1\bin\Debug\net7.0\Day2SD43_Task1.dll
+C:\Users\ahmed\source\repos\Day2SD43_Task1\bin\Debug\net7.0\Day2SD43_Task1.pdb
+C:\Users\ahmed\source\repos\Day2SD43_Task1\obj\Debug\net7.0\Day2SD43_Task1.csproj.AssemblyReference.cache
+C:\Users\ahmed\source\repos\Day2SD43_Task1\obj\Debug\net7.0\Day2SD43_Task1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmed\source\repos\Day2SD43_Task1\obj\Debug\net7.0\Day2SD43_Task1.AssemblyInfoInputs.cache
+C:\Users\ahmed\source\repos\Day2SD43_Task1\obj\Debug\net7.0\Day2SD43_Task1.AssemblyInfo.cs
+C:\Users\ahmed\source\repos\Day2SD43_Task1\obj\Debug\net7.0\Day2SD43_Task1.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\source\repos\Day2SD43_Task1\obj\Debug\net7.0\Day2SD43_Task1.dll
+C:\Users\ahmed\source\repos\Day2SD43_Task1\obj\Debug\net7.0\refint\Day2SD43_Task1.dll
+C:\Users\ahmed\source\repos\Day2SD43_Task1\obj\Debug\net7.0\Day2SD43_Task1.pdb
+C:\Users\ahmed\source\repos\Day2SD43_Task1\obj\Debug\net7.0\Day2SD43_Task1.genruntimeconfig.cache
+C:\Users\ahmed\source\repos\Day2SD43_Task1\obj\Debug\net7.0\ref\Day2SD43_Task1.dll
