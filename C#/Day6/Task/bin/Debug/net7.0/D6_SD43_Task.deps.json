@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "D6_SD43_Task/1.0.0": {
+        "runtime": {
+          "D6_SD43_Task.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "D6_SD43_Task/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
