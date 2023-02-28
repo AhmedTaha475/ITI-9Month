@@ -1,0 +1,17 @@
+C:\Users\ahmed\source\repos\D11_SD43_Task2\bin\Debug\net7.0-windows\D11_SD43_Task2.exe
+C:\Users\ahmed\source\repos\D11_SD43_Task2\bin\Debug\net7.0-windows\D11_SD43_Task2.deps.json
+C:\Users\ahmed\source\repos\D11_SD43_Task2\bin\Debug\net7.0-windows\D11_SD43_Task2.runtimeconfig.json
+C:\Users\ahmed\source\repos\D11_SD43_Task2\bin\Debug\net7.0-windows\D11_SD43_Task2.dll
+C:\Users\ahmed\source\repos\D11_SD43_Task2\bin\Debug\net7.0-windows\D11_SD43_Task2.pdb
+C:\Users\ahmed\source\repos\D11_SD43_Task2\obj\Debug\net7.0-windows\D11_SD43_Task2.csproj.AssemblyReference.cache
+C:\Users\ahmed\source\repos\D11_SD43_Task2\obj\Debug\net7.0-windows\D11_SD43_Task2.Form1.resources
+C:\Users\ahmed\source\repos\D11_SD43_Task2\obj\Debug\net7.0-windows\D11_SD43_Task2.csproj.GenerateResource.cache
+C:\Users\ahmed\source\repos\D11_SD43_Task2\obj\Debug\net7.0-windows\D11_SD43_Task2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmed\source\repos\D11_SD43_Task2\obj\Debug\net7.0-windows\D11_SD43_Task2.AssemblyInfoInputs.cache
+C:\Users\ahmed\source\repos\D11_SD43_Task2\obj\Debug\net7.0-windows\D11_SD43_Task2.AssemblyInfo.cs
+C:\Users\ahmed\source\repos\D11_SD43_Task2\obj\Debug\net7.0-windows\D11_SD43_Task2.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\source\repos\D11_SD43_Task2\obj\Debug\net7.0-windows\D11_SD43_Task2.dll
+C:\Users\ahmed\source\repos\D11_SD43_Task2\obj\Debug\net7.0-windows\refint\D11_SD43_Task2.dll
+C:\Users\ahmed\source\repos\D11_SD43_Task2\obj\Debug\net7.0-windows\D11_SD43_Task2.pdb
+C:\Users\ahmed\source\repos\D11_SD43_Task2\obj\Debug\net7.0-windows\D11_SD43_Task2.genruntimeconfig.cache
+C:\Users\ahmed\source\repos\D11_SD43_Task2\obj\Debug\net7.0-windows\ref\D11_SD43_Task2.dll
