@@ -1,0 +1,16 @@
+C:\Users\ahmed\source\repos\D13_SD43_BLL\bin\Debug\net7.0\D13_SD43_BLL.deps.json
+C:\Users\ahmed\source\repos\D13_SD43_BLL\bin\Debug\net7.0\D13_SD43_BLL.dll
+C:\Users\ahmed\source\repos\D13_SD43_BLL\bin\Debug\net7.0\D13_SD43_BLL.pdb
+C:\Users\ahmed\source\repos\D13_SD43_BLL\bin\Debug\net7.0\D13_SD43_DAL.dll
+C:\Users\ahmed\source\repos\D13_SD43_BLL\bin\Debug\net7.0\D13_SD43_DAL.pdb
+C:\Users\ahmed\source\repos\D13_SD43_BLL\bin\Debug\net7.0\D13_SD43_DAL.dll.config
+C:\Users\ahmed\source\repos\D13_SD43_BLL\obj\Debug\net7.0\D13_SD43_BLL.csproj.AssemblyReference.cache
+C:\Users\ahmed\source\repos\D13_SD43_BLL\obj\Debug\net7.0\D13_SD43_BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmed\source\repos\D13_SD43_BLL\obj\Debug\net7.0\D13_SD43_BLL.AssemblyInfoInputs.cache
+C:\Users\ahmed\source\repos\D13_SD43_BLL\obj\Debug\net7.0\D13_SD43_BLL.AssemblyInfo.cs
+C:\Users\ahmed\source\repos\D13_SD43_BLL\obj\Debug\net7.0\D13_SD43_BLL.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\source\repos\D13_SD43_BLL\obj\Debug\net7.0\D13_SD43_BLL.csproj.CopyComplete
+C:\Users\ahmed\source\repos\D13_SD43_BLL\obj\Debug\net7.0\D13_SD43_BLL.dll
+C:\Users\ahmed\source\repos\D13_SD43_BLL\obj\Debug\net7.0\refint\D13_SD43_BLL.dll
+C:\Users\ahmed\source\repos\D13_SD43_BLL\obj\Debug\net7.0\D13_SD43_BLL.pdb
+C:\Users\ahmed\source\repos\D13_SD43_BLL\obj\Debug\net7.0\ref\D13_SD43_BLL.dll
