@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+
+
+
+    <form  method="post">
+
+        Name:<input type="text" name="name" value="" />
+        <br />
+        <br />
+        BirthDate: <input type="date" name="birthdate" value="" />
+        <br />
+        <br />
+        <input type="submit" value="Go" />
+
+        <input type="checkbox" name="graudated" value="grad" checked/> Is Graduated
+
+    </form>
+    @{
+        var name = Request.Form["name"];
+        var birthdate = Request.Form["birthdate"];
+        var graduated = "";
+        if (Request.Form["graudated"]=="grad")
+        {
+            graduated= "Yes Iam Graudated" ;
+
+        }else
+        {
+            graduated = "No i didn't graduate Yet";
+        }
+    }
+
+    @if (IsPost)
+    {
+
+        <h1 style="color:red;">Hello <span>@name</span></h1>
+
+        <br />
+
+        <h1 style="color:blue;">Your Birthdate is : <span>@birthdate</span></h1><br />
+
+        <h1>@graduated</h1>
+    }
+
+
+</body>
+</html>

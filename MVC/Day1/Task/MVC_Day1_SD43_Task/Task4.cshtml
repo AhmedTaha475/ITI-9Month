@@ -1,0 +1,57 @@
+﻿@using MVC_Day1_SD43_Task
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+    @{
+        List<Products> lst = new List<Products>() {
+
+        new Products(1,"ahmed"),
+        new Products(2,"ahmed"),
+        new Products(3,"ahmed"),
+        new Products(4,"ahmed"),
+        new Products(5,"ahmed"),
+        new Products(6,"ahmed"),
+        new Products(7,"ahmed"),
+        new Products(8,"ahmed"),
+        new Products(9,"ahmed"),
+        new Products(10,"ahmed"),
+        new Products(11,"ahmed"),
+        new Products(12,"ahmed"),
+        new Products(13,"ahmed"),
+
+        };
+    }
+
+
+    @{
+        WebGrid grid = new WebGrid(lst);
+
+
+    }
+    @{
+        var chart = new Chart(width: 600, height: 400)
+            .AddTitle("Sales by Month")
+            .AddSeries(
+                name: "Sales",
+                xValue: new[] { "Jan", "Feb", "Mar", "Apr", "May", "Jun" },
+                yValues: new[] { "1200", "1300", "900", "1500", "800", "1100" })
+            .GetBytes("png");
+    }
+
+
+    @grid.GetHtml();
+
+
+    <img src="@String.Format("data:image/png;base64,{0}", Convert.ToBase64String(chart))" />
+
+
+
+
+
+
+</body>
+</html>
