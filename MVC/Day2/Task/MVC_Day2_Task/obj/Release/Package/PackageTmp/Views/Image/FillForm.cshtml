@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "FillForm";
+    var counter = 1;
+}
+
+<h2>Please Fill Out This Form</h2>
+
+
+<form action="ResultView" method="post">
+
+    <div>
+        <label>ID:</label>
+        <input type="text" name="id" value="" class="form-control" />
+        <br />
+        <label>Name:</label>
+        <input type="text" name="name" value="" class="form-control" />
+        <br />
+        <label>Image:</label>
+        <select name="img">
+            @foreach (var item in ViewBag.imgs)
+            {
+                <option value="@item">@counter</option>
+                counter++;
+            }
+
+        </select>
+        <br />
+    </div>
+    <br />
+    <input type="submit" class="btn btn-primary"  value="Submit" />
+
+</form>

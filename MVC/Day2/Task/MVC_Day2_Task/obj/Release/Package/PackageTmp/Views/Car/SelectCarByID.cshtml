@@ -1,0 +1,17 @@
+﻿@using MVC_Day2_Task.Models;
+@{
+    ViewBag.Title = "SelectCarByID";
+
+    car c1 = ViewBag.selectedCar;
+}
+
+<h2>Selected Car</h2>
+
+
+<h2>ID:@c1.Num</h2>
+<h2>Color:@c1.Color</h2>
+<h2>Model:@c1.Model</h2>
+<h2>Manfacture:@c1.Manfacture</h2>
+
+
+<a href="/Car/GetAllCars" class="btn btn-primary"> Return to car list</a>
