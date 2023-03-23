@@ -1,0 +1,66 @@
+﻿@model MVC_Day3_SD43_Task2.Models.Emp
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Emp</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpFname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpFname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpLname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpLname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpSalary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpSalary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpHDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpHDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CtyID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CtyID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dept.DeptName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dept.DeptName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EmpID },new {@class="btn btn-primary"}) |
+    @Html.ActionLink("Back to List", "Index","", new { @class = "btn btn-success" })
+</p>

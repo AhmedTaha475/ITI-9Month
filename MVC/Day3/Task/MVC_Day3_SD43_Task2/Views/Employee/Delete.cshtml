@@ -1,0 +1,73 @@
+﻿@model MVC_Day3_SD43_Task2.Models.Emp
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Emp</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpFname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpFname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpLname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpLname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpSalary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpSalary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpHDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpHDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CtyID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CtyID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dept.DeptName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dept.DeptName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm("Delete","Employee",FormMethod.Post)) {
+        @Html.AntiForgeryToken()
+
+<div class="form-actions no-color">
+    @Html.HiddenFor(model => model.EmpID)
+    <input type="submit" value="Delete" class="btn btn-danger" /> |
+    @Html.ActionLink("Back to List", "Index", "", new { @class = "btn btn-primary" })
+</div>
+    }
+</div>
