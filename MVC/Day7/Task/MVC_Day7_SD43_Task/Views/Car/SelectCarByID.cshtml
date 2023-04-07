@@ -1,0 +1,15 @@
+﻿@using MVC_Day7_SD43_Task.Model;
+@{
+    ViewData["Title"] = "SelectCarByID";
+    Car c1 = ViewBag.selectedCar;
+}
+
+<h1>SelectCarByID</h1>
+
+<h2>ID:@c1.Num</h2>
+<h2>Color:@c1.Color</h2>
+<h2>Model:@c1.Model</h2>
+<h2>Manfacture:@c1.Manufacture</h2>
+
+
+<a href="/Car/getall" class="btn btn-primary"> Return to car list</a>

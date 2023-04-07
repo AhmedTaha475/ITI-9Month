@@ -1,0 +1,34 @@
+﻿@using MVC_Day7_SD43_Task.Model;
+@{
+    ViewData["Title"] = "UpdateCar";
+    Car c1 = ViewBag.selectedCar;
+}
+
+<h2>UpdateCar</h2>
+
+<form action="UpdateCar" method="post">
+    @*<input type="text" class="form-control" name="num" value="@c1.Num" hidden />*@
+
+
+    <div>
+        <label>ID</label>
+        @*<input type="text" class="form-control" value="@c1.Num" disabled />*@
+        <input type="text" class="form-control" name="num" value="@c1.Num" />
+        <br />
+        <label>Color</label>
+        <input class="form-control" name="color" value="@c1.Color" />
+        <br />
+        <label>Model</label>
+        <input class="form-control" name="model" value="@c1.Model" />
+        <br />
+        <label>Manfacture</label>
+        <input class="form-control" name="man" value="@c1.Manufacture" />
+        <br />
+
+        <input class="form-control" type="submit" value="Edit" />
+        <br />
+
+
+    </div>
+</form>
+
